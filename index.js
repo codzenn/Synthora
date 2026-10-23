@@ -2,10 +2,10 @@ import "dotenv/config";
 import { stdin, stdout } from "node:process";
 import { createInterface } from "node:readline/promises";
 
-import { getClaudeAnswer } from "./services/claude.js";
-import { getGeminiAnswer } from "./services/gemini.js";
-import { judgeAnswers } from "./services/judge.js";
-import { getOpenAIAnswer } from "./services/openai.js";
+import { getClaudeAnswer } from "./web/services/claude.js";
+import { getGeminiAnswer } from "./web/services/gemini.js";
+import { judgeAnswers } from "./web/services/judge.js";
+import { getOpenAIAnswer } from "./web/services/openai.js";
 
 const rl = createInterface({
   input: stdin,
